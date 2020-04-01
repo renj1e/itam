@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Starter Page | Skote - Responsive Bootstrap 4 Admin Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap-dark.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app-dark.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            .card>img {
+                height: 100px;
+                min-height: 100px;
+            }
+        </style>
+    </head>
+
+    <body data-sidebar="dark">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="https://lh3.googleusercontent.com/proxy/NBIQ61p5aWto28UHFf1_KaqOvCivK8KXuTYkG3SUtNohFCqLhWPeJsft_RyJeOF0TWIX2eH05StWwUN_I9vjP7zwS99Z6mbBOfY-4rh-8g" alt="" height="16">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="https://lh3.googleusercontent.com/proxy/NBIQ61p5aWto28UHFf1_KaqOvCivK8KXuTYkG3SUtNohFCqLhWPeJsft_RyJeOF0TWIX2eH05StWwUN_I9vjP7zwS99Z6mbBOfY-4rh-8g" alt="" height="60">
+                                </span>
+                            </a>
+
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="https://lh3.googleusercontent.com/proxy/NBIQ61p5aWto28UHFf1_KaqOvCivK8KXuTYkG3SUtNohFCqLhWPeJsft_RyJeOF0TWIX2eH05StWwUN_I9vjP7zwS99Z6mbBOfY-4rh-8g" alt="" height="16">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="https://lh3.googleusercontent.com/proxy/NBIQ61p5aWto28UHFf1_KaqOvCivK8KXuTYkG3SUtNohFCqLhWPeJsft_RyJeOF0TWIX2eH05StWwUN_I9vjP7zwS99Z6mbBOfY-4rh-8g" alt="" height="60">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+
+                        <!-- App Search-->
+                        <form class="app-search d-none d-lg-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="bx bx-search-alt"></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="d-flex">
+
+                        <div class="dropdown d-inline-block d-lg-none ml-2">
+                            <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                                aria-labelledby="page-header-search-dropdown">
+                    
+                                <form class="p-3">
+                                    <div class="form-group m-0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ml-1">Henry</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle mr-1"></i> My Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="bx bx-wrench font-size-16 align-middle mr-1"></i> Settings</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle mr-1"></i> Lock screen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="#"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                                <i class="bx bx-cog bx-spin"></i>
+                            </button>
+                        </div>
+            
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Menu</li>
+
+                            <li>
+                                <a href="assets-overview.html" class="waves-effect">
+                                    <i class="bx bx-home-circle"></i><span class="badge badge-pill badge-info float-right">3</span>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-title">IT Assets</li>
+
+                            <li class="mm-active">
+                                <a href="javascript: void(0);" class="has-arrow waves-effect mm-active">
+                                    <i class="bx bx-home-circle"></i>
+                                    <span>Overview</span>
+                                </a>
+                                <ul class="sub-menu mm-show" aria-expanded="false">
+                                    <li class="mm-active"><a href="assets-overview.html" class="active">Filter</a></li>
+                                    <li><a href="add-asset.html">Add</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0 font-size-18">Assets Overview <span>: CORPLAN</span></h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Assets</a></li>
+                                            <li class="breadcrumb-item"><a href="assets-overview.html">Overview</a></li>
+                                            <li class="breadcrumb-item active">CORPLAN</li>
+                                        </ol>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>     
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                                
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3">Filter</h4>
+
+                                        <div>
+                                            <h5 class="font-size-14 mb-2">Hardware: Computers / Devices</h5>
+                                            <ul class="list-unstyled product-list">
+                                                <li><a href="#" class="font-weight-bold"><i class="mdi mdi-chevron-right mr-1"></i> Desktops</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Laptops</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Printers</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Keyboard</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Mouse</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Projectors</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Speakers</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-size-14 mb-2">Software: Programs / Apps</h5>
+                                            <ul class="list-unstyled product-list">
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Anti-Virus</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Microsoft Office Tools</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Operating Software</a></li>
+                                                <li><a href="#"><i class="mdi mdi-chevron-right mr-1"></i> Others</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title mb-3">Sub Filter</h4>
+
+                                        <div>
+                                            <h5 class="font-size-14 mb-2">From Year acquired</h5>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck1">
+                                                <label class="custom-control-label" for="productdiscountCheck1">Less than 1 year</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck2">
+                                                <label class="custom-control-label" for="productdiscountCheck2">2 yrs or more</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck3" checked="">
+                                                <label class="custom-control-label" for="productdiscountCheck3">3 yrs or more</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck4">
+                                                <label class="custom-control-label" for="productdiscountCheck4">4 yrs or more</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck5">
+                                                <label class="custom-control-label" for="productdiscountCheck5">5 yrs or more</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck6">
+                                                <label class="custom-control-label" for="productdiscountCheck6">6 yrs or more</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck7">
+                                                <label class="custom-control-label" for="productdiscountCheck7">No longer supported</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck8">
+                                                <label class="custom-control-label" for="productdiscountCheck8">Expired</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck9">
+                                                <label class="custom-control-label" for="productdiscountCheck9">Lifetime supported</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mt-2">
+                                                <input type="checkbox" class="custom-control-input" id="productdiscountCheck10">
+                                                <label class="custom-control-label" for="productdiscountCheck10">Under Warranty</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-9">
+                                    
+                                <div class="row mb-3">
+                                    <div class="col-xl-4 col-sm-6">
+                                        <div class="mt-2">
+                                            <h5>Desktops</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-sm-6">
+                                        <form class="mt-4 mt-sm-0 float-sm-right form-inline">
+                                            <div class="search-box mr-2">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control border-0" placeholder="Search...">
+                                                    <i class="bx bx-search-alt search-icon"></i>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-6 col-xl-6">                                            
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                                            <div class="card-body px-1 py-2">
+                                                <h4 class="card-title mt-2 mb-0"><span><i class="bx bx-desktop"></i></span> Desktop 1</h4>
+                                                <hr class="mx-0 my-2">
+                                                <p class="card-text mb-0"><span class="font-weight-regular">Issued to / Date / Status:</span></p>
+                                                <p class="card-text mb-0 font-weight-regular">
+                                                    <span><i class="bx bx-chevron-right"></i></span>
+                                                    <span class="font-weight-bold">Juan D. la Crux (2nd)</span> / 
+                                                    <span class="font-weight-bold">Dec 12, 2019</span> / 
+                                                    <small class="badge badge-pill badge-danger">OLD</small>
+                                                </p>
+                                            </div>
+                                            <hr class="mx-0 my-0">
+                                            <!-- 
+                                                <div class="card-body px-1 py-2">
+                                                    <p class="card-text mb-0"><span class="font-weight-bold">Software Info:</span></p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-1 py-1" title="Serial Number / OS" data-toggle="tooltip" data-placement="top" data-original-title="Serial Number / OS">123-456-7890 / Windows 10 Pro</li>
+                                                    <li class="list-group-item px-1 py-1" title="Product key" data-toggle="tooltip" data-placement="top" data-original-title="Product key">xxxx-xxxx-xxxx-xxxx</li>
+                                                    <li class="list-group-item px-1 py-1" title="IP / MAC" data-toggle="tooltip" data-placement="top" data-original-title="IP / MAC">192.168.16.190 / A3-DC-45-D5-3B-A0</li>
+                                                </ul>
+                                                <div class="card-body px-1 py-2">
+                                                    <p class="card-text mb-0"><span class="font-weight-bold">Hardware Info:</span></p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item px-1 py-1" title="CPU" data-toggle="tooltip" data-placement="top" data-original-title="CPU">(1x) Intel / Core i5 / 5th Gen / LGA1151</li>
+                                                    <li class="list-group-item px-1 py-1" title="RAM/Memory" data-toggle="tooltip" data-placement="top" data-original-title="RAM/Memory">(2x) Kingston / 4GB / 2300</li>
+                                                    <li class="list-group-item px-1 py-1" title="Keyboard" data-toggle="tooltip" data-placement="top" data-original-title="Keyboard">(1x) LogiTech / Mechanical KB</li>
+                                                    <li class="list-group-item px-1 py-1" title="Mouse" data-toggle="tooltip" data-placement="top" data-original-title="Mouse">(1x) LogiTech / Optical Mouse</li>
+                                                </ul>
+                                             -->
+                                            <div class="card-body px-1 py-2">
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Software Info</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Peripherals (7)</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Usage Stats</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">History</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-6">                                            
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                                            <div class="card-body px-1 py-2">
+                                                <h4 class="card-title mt-2 mb-0"><span><i class="bx bx-desktop"></i></span> Desktop 2</h4>
+                                                <hr class="mx-0 my-2">
+                                                <p class="card-text mb-1"><span class="font-weight-regular">Issued to / Date / Status:</span></p>
+                                                <p class="card-text mb-0 font-weight-regular">
+                                                    <span><i class="bx bx-chevron-right"></i></span>
+                                                    <span class="font-weight-bold">Marcos D. la Crux (2nd)</span> / 
+                                                    <span class="font-weight-bold">Dec 12, 2019</span> / 
+                                                    <small class="badge badge-pill badge-danger">OLD</small>
+                                                </p>
+                                            </div>
+                                            <hr class="mx-0 my-0">
+                                            <div class="card-body px-1 py-2">
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Software Info</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Peripherals (8)</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Usage Stats</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">History</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-6">                                            
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                                            <div class="card-body px-1 py-2">
+                                                <h4 class="card-title mt-2 mb-0"><span><i class="bx bx-printer"></i></span> Printer 1</h4>
+                                                <hr class="mx-0 my-2">
+                                                <p class="card-text mb-0"><span class="font-weight-regular">Issued to / Date / Status:</span></p>
+                                                <p class="card-text mb-0 font-weight-regular">
+                                                    <span><i class="bx bx-chevron-right"></i></span>
+                                                    <span class="font-weight-bold">Segunda D. la Crux</span> / 
+                                                    <span class="font-weight-bold">Dec 12, 2019</span> / 
+                                                    <small class="badge badge-pill badge-danger">OLD</small>
+                                                </p>
+                                            </div>
+                                            <hr class="mx-0 my-0">
+                                            <div class="card-body px-1 py-2">
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Software Info</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Peripherals (7)</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Usage Stats</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">History</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xl-6">                                            
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                                            <div class="card-body px-1 py-2">
+                                                <h4 class="card-title mt-2 mb-0"><span><i class="bx bx-laptop"></i></span> Laptop 1</h4>
+                                                <hr class="mx-0 my-2">
+                                                <p class="card-text mb-0"><span class="font-weight-regular">Issued to / Date / Status:</span></p>
+                                                <p class="card-text mb-0 font-weight-regular">
+                                                    <span><i class="bx bx-chevron-right"></i></span>
+                                                    <span class="font-weight-bold">Marcos D. la Crux</span> / 
+                                                    <span class="font-weight-bold">Dec 12, 2019</span> / 
+                                                    <small class="badge badge-pill badge-success">NEW</small>
+                                                </p>
+                                            </div>
+                                            <hr class="mx-0 my-0">
+                                            <div class="card-body px-1 py-2">
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Software Info</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Peripherals (7)</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">Usage Stats</button>
+                                                <button class="btn btn-sm btn-default -card-link right-bar-modal-toggle">History</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- end row -->
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="pagination pagination-rounded justify-content-center mt-4">
+                                            <li class="page-item disabled">
+                                                <a href="#" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="#" class="page-link">1</a>
+                                            </li>
+                                            <li class="page-item active">
+                                                <a href="#" class="page-link">2</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="#" class="page-link">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="#" class="page-link">4</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="#" class="page-link">5</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a href="#" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div class="h-10">
+                <div class="rightbar-title px-3 py-3">
+                    <a href="javascript:void(0);" class="right-bar-toggle float-right">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                    <h5 class="m-0">Settings</h5>
+                </div>
+                <!-- Settings -->
+                <hr class="mt-0 mb-0" />
+            </div>
+            <div data-simplebar class="h-100 pt-3">
+                <h6 class="text-center mb-0">Choose Layouts</h6>
+
+                <div class="p-4">
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+
+            
+                </div>
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+
+        <div class="right-bar-modal">
+            <div class="h-10">
+                <div class="rightbar-title px-3 py-3">
+                    <a href="javascript:void(0);" class="right-bar-modal-toggle float-left mr-3">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                    <h5 class="m-0">Asset Info : <span>Desktop 1</span></h5>
+                </div>
+                <!-- Settings -->
+                <hr class="mt-0 mb-0" />
+            </div>
+            <div data-simplebar class="h-100 pt-3">
+                <div class="p-2">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs nav-tabs-custom " role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#software-info" role="tab">
+                                <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                <span class="d-none d-sm-block">Software Info</span>    
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#peripherals" role="tab">
+                                <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                <span class="d-none d-sm-block">Peripherals</span>    
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#stats" role="tab">
+                                <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                <span class="d-none d-sm-block">Usage Stats</span>    
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#history" role="tab">
+                                <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                <span class="d-none d-sm-block">History</span>    
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content p-3 text-muted">
+                        <div class="tab-pane active" id="software-info" role="tabpanel">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12">
+                                    <div class="table-responsive mt-4">
+                                        <table class="table table-centered table-nowrap">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 200px">
+                                                        <p class="mb-0">Serial Number / OS</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">123-456-7890 / Windows 10 Pro</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">Product key</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">xxxx-xxxx-xxxx-xxxx</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">IP / MAC</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">192.168.16.190 / A3-DC-45-D5-3B-A0</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>       
+                                <div class="col-xl-6 col-lg-6 col-md-12">
+                                    <div class="table-responsive mt-4">
+                                        <table class="table table-centered table-nowrap">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 200px">
+                                                        <p class="mb-0">CPU</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">(1x) Intel / Core i5 / 5th Gen / LGA1151</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">RAM/Memory</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">(2x) Kingston / 4GB / 2300</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">Video / Graphics Card</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">(1x) NVIDIA / 6GB</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>                                
+                            </div>                            
+                        </div>
+                        <div class="tab-pane" id="peripherals" role="tabpanel">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12">
+                                    <div class="table-responsive mt-4">
+                                        <table class="table table-centered table-nowrap">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 200px">
+                                                        <p class="mb-0">Keyboard</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">(1x) LogiTech / Mechanical KB</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="mb-0">Mouse</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="mb-0">(1x) LogiTech / Optical Mouse</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>       
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="stats" role="tabpanel">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div id="line_chart_dashed_usage_stats" class="apex-charts mt-4" dir="ltr"></div>                                         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="history" role="tabpanel">
+
+                            <div class="mt-4">
+                                <ul class="verti-timeline list-unstyled">
+                                    <li class="event-list pb-3">
+                                        <div class="event-timeline-dot">
+                                            <i class="bx bx-right-arrow-circle"></i>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3">
+                                                <i class="bx bx-user-plus h2 text-primary"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <h5><small>March 16, 2020 4:30 PM</small></h5>
+                                                    <h5>Issued</h5>
+                                                    <p class="text-muted">New common language will be more simple and regular than the existing.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event-list pb-3">
+                                        <div class="event-timeline-dot">
+                                            <i class="bx bx-right-arrow-circle"></i>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3">
+                                                <i class="bx bx-sitemap h2 text-primary"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <h5><small>March 19, 2020 10:30 AM</small></h5>
+                                                    <h5>System Update</h5>
+                                                    <p class="text-muted">New common language will be more simple and regular than the existing.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event-list pb-3">
+                                        <div class="event-timeline-dot">
+                                            <i class="bx bx-right-arrow-circle"></i>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3">
+                                                <i class="bx bx-sitemap h2 text-primary"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <h5><small>March 19, 2020 10:30 AM</small></h5>
+                                                    <h5>Hardware Repair</h5>
+                                                    <p class="text-muted">To achieve this, it would be necessary to have uniform grammar.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event-list pb-3">
+                                        <div class="event-timeline-dot">
+                                            <i class="bx bx-right-arrow-circle"></i>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3">
+                                                <i class="bx bx-sitemap h2 text-primary"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <h5><small>March 19, 2020 10:30 AM</small></h5>
+                                                    <h5>Hardware Repair</h5>
+                                                    <p class="text-muted">It will be as simple as Occidental in fact, it will be Occidental..</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event-list pb-3">
+                                        <div class="event-timeline-dot">
+                                            <i class="bx bx-right-arrow-circle"></i>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3">
+                                                <i class="bx bx-sitemap h2 text-primary"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <h5><small>March 19, 2020 10:30 AM</small></h5>
+                                                    <h5>Hardware Repair</h5>
+                                                    <p class="text-muted">To an English person, it will seem like simplified English.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="event-list pb-3 active">
+                                        <div class="event-timeline-dot">
+                                            <i class="bx bx-right-arrow-circle bx-fade-right"></i>
+                                        </div>
+                                        <div class="media">
+                                            <div class="mr-3">
+                                                <i class="bx bx-user-plus h2 text-primary"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <div>
+                                                    <h5><small>March 19, 2020 10:30 AM</small></h5>
+                                                    <h5>Issued</h5>
+                                                    <p class="text-muted">To an English person, it will seem like simplified English.</p>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <!-- apexcharts -->
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+        <script type="text/javascript">
+            const installedApps = navigator.getInstalledRelatedApps();
+            // const nativeApp = installedApps.find(app => app.id === 'com.example.myapp');
+            // console.log(navigator)
+            // console.log(navigator.userAgent)
+            // console.log(navigator.platform)
+            // console.log(navigator.plugins)
+
+            options = {
+                chart: {
+                    height: 380,
+                    type: "area",
+                    zoom: {
+                        enabled: !1
+                    },
+                    toolbar: {
+                        show: !1
+                    }
+                },
+                colors: ["#556ee6", "#f46a6a", "#34c38f"],
+                dataLabels: {
+                    enabled: !1
+                },
+                stroke: {
+                    width: [3, 4, 3],
+                    curve: "straight",
+                    dashArray: [0, 8, 5]
+                },
+                series: [{
+                    name: "Session Duration",
+                    data: [99, 76, 94, 138, 92, 78, 94, 66, 94, 68, 86, 69]
+                }, {
+                    name: "Mouse",
+                    data: [36, 42, 60, 42, 13, 18, 29, 37, 36, 51, 32, 35]
+                }, {
+                    name: "Keyboard",
+                    data: [89, 56, 74, 98, 72, 38, 64, 46, 84, 58, 46, 49]
+                }],
+                title: {
+                    text: "Activities",
+                    align: "left"
+                },
+                markers: {
+                    size: 0,
+                    hover: {
+                        sizeOffset: 6
+                    }
+                },
+                xaxis: {
+                    categories: ["01 Jan", "02 Jan", "03 Jan", "04 Jan", "05 Jan", "06 Jan", "07 Jan", "08 Jan", "09 Jan", "10 Jan", "11 Jan", "12 Jan"]
+                },
+                tooltip: {
+                    y: [{
+                        title: {
+                            formatter: function(e) {
+                                return e + " (mins)"
+                            }
+                        }
+                    }, {
+                        title: {
+                            formatter: function(e) {
+                                return e + " click per min"
+                            }
+                        }
+                    }, {
+                        title: {
+                            formatter: function(e) {
+                                return e + " press per min"
+                            }
+                        }
+                    }]
+                },
+                grid: {
+                    borderColor: "#f1f1f1"
+                }
+            };
+            (chart = new ApexCharts(document.querySelector("#line_chart_dashed_usage_stats"), options)).render();
+        </script>
+    </body>
+</html>
